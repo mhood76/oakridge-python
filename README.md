@@ -13,8 +13,7 @@ something.
 computer to do a task.  
 - There are two main types of programming languages, **visual** and 
 **textual**.  
-- <img src="https://logodix.com/logo/2015665.png" alt="Scratch" width="75"/> 
-is a visual programming language  
+- <img src="https://logodix.com/logo/2015665.png" alt="Scratch" width="75"/> is a visual programming language  
 
 Here are some textual languages:
 <center>
