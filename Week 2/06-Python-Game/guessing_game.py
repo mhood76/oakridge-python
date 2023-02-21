@@ -13,7 +13,6 @@ rules = '''
 '''
 
 print(rules)
-print(secret)
 
 while True:
     play = input("Do you want to play (Yes/No)? " )
@@ -30,7 +29,6 @@ print("A random number has been generated")
 print("Can you guess it in 3 tries? \n")
 
 for t in range(0, trys):
-    print(t)
     guess = int(input(f"Attempt #{t+1}, What is your choice? "))
     time.sleep(1)
     print("hmmm... let me see")
@@ -43,6 +41,3 @@ for t in range(0, trys):
 
 print("Sorry you did not guess the correct number... :(")
 print(f"The correct answer was {secret}. Better luck next time.")
-
-
-
