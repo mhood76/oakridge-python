@@ -1,9 +1,14 @@
-from machine import Pin, Timer
+from machine import Pin
+from time import sleep
+
 
 led = Pin(25, Pin.OUT)
-timer = Timer()
+#led2 = Pin(16, Pin.OUT)
+button = Pin(15, Pin.IN, Pin.PULL_DOWN)
 
-def blink(timer):
-    led.toggle()
-
-timer.init(freq=1, mode=Timer.PERIODIC, callback=blink)
+while True:
+    led.value(0)
+    while button.value() == 1:
+        led.toggle()
+        #led2.toggle()
+        sleep(0.1)
